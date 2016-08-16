@@ -1,8 +1,17 @@
 .navbar-fixed
-	nav.transparent.blue-grey.darken-4
-		.nav-wrapper.container 
-			h1.white-text Andreas Johansson
-.blue-grey.white-text(data-midnight="blue-grey darken-4")
+	//- nav.transparent.blue-grey.darken-4
+	nav.transparent
+		//- .nav-wrapper.container 
+		.nav-wrapper.midnightHeader.default
+			h1 Andreas Johansson
+		.nav-wrapper.midnightHeader.foo
+			h1 Andreas Johansson FOO
+		.nav-wrapper.midnightHeader.bar
+			h1 Andreas Johansson BAR
+
+//- .blue-grey.white-text(data-midnight="blue-grey darken-4")
+//- .blue-grey.white-text(data-midnight="transparent")
+.blue-grey.white-text(data-midnight="foo")
 	br
 	br
 	br
@@ -11,8 +20,8 @@
 	br
 	h3 Hi!
 	h5 I am a Computer Scientist and Musician
-.container(data-midnight="blue-grey darken-2")
-	br
+//- .container(data-midnight="blue-grey darken-2")
+.container(data-midnight="bar")
 	h5 Check out these links!
 	.white
 		a(href="CV").btn-floating.waves-effect.waves-light.light-blue.darken-4.bold CV

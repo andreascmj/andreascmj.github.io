@@ -1,0 +1,24 @@
+{
+  "name": "andreascmj.github.io",
+  "version": "1.0.0",
+  "description": "Personal resumé",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "start /b harp server & browser-sync start --proxy \"localhost:9000\" --files \"**/*.jade, **/*.less, **/*.json, **/*.js, **/*.coffee\" --no-notify",
+    "compile": "harp compile . ..\\"
+  },
+  "author": "andreascmj",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreascmj/andreascmj.github.io.git"
+  },
+  "keywords": [
+    "CV"
+  ],
+  "bugs": {
+    "url": "https://github.com/andreascmj/andreascmj.github.io/issues"
+  },
+  "homepage": "https://andreascmj.github.com"
+}
