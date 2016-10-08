@@ -1,35 +1,14 @@
-.navbar-fixed
-	nav.transparent.white-text
-		a(href="CV").nav-wrapper.midnightHeader.default.blue-grey.darken-4
-			h1 Andreas Johansson
-		.nav-wrapper.midnightHeader.foo.blue-grey.darken-3
-			h1 Andreas Johansson
-		.nav-wrapper.midnightHeader.bar.blue-grey.darken-2
-			h1 Andreas Johansson
-//- .blue-grey.white-text(data-midnight="blue-grey darken-4")
-//- .blue-grey.white-text(data-midnight="transparent")
-.blue-grey.white-text(data-midnight="foo")
-	img.profilbild(src="img/profilbild2.jpg")
-	br
-	h3 Hi!
-	h5 I am a Computer Scientist and Musician
+block files
+	script(src='app.js')
+include _nav
+#fullpage
+	.section(data-midnight="foo")
+		img.profilbild(src="img/profilbild2.jpg")
+		br
+	include _links
+	include _CV
+
 //- .container(data-midnight="blue-grey darken-2")
-.container(data-midnight="bar")
-	h5 Check out these links!
-	.white
-		a(href="CV").btn-floating.waves-effect.waves-light.light-blue.darken-4.bold CV
-		a(href="mailto:andreas.cm.johansson@gmail.com").btn-floating.waves-effect.waves-light.light-blue.darken-4
-			i.fa.fa-envelope-o
-		a(href="https://github.com/andreascmj").btn-floating.waves-effect.waves-light.light-blue.darken-4 
-			i.fa.fa-github
-		a(href="https://se.linkedin.com/in/andreascmjohansson").btn-floating.waves-effect.waves-light.light-blue.darken-4.hoverable
-			i.fa.fa-linkedin
-		a(href="https://soundcloud.com/andreascmjohansson").btn-floating.waves-effect.waves-light.light-blue.darken-4.hoverable
-			i.fa.fa-soundcloud
-		a(href="https://twitter.com/Andreas_cmj").btn-floating.waves-effect.waves-light.light-blue.darken-4.hoverable
-			i.fa.fa-twitter
-	.white
-		//- p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 //- footer.page-footer.blue-grey.darken-2#main.white-text
 //- 	.container
 //- 		.row
