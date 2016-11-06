@@ -2,10 +2,10 @@ block files
 	script(src='app.js')
 include _nav
 #fullpage
-	.section(data-midnight="foo")
-		img.profilbild(src="img/profilbild2.jpg")
+	.section.mainsec(data-midnight="foo")
+		img.profilbild.tooltiped(src="img/profilbild2.jpg" title="Tooltip text")
 		br
-	include _links
+		include _links
 	include _CV
 
 //- .container(data-midnight="blue-grey darken-2")

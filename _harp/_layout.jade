@@ -9,18 +9,11 @@ html
     //- Midnight
     script(type="text/javascript" src="https://cdn.jsdelivr.net/jquery.midnight/1.1.1/midnight.jquery.min.js")
 
-    //- Initializers - should be moved to app.coffee
-    script(type="text/javascript").
-        // Start midnight
-        $(document).ready(function(){
-          // Change this to the correct selector.
-          $('nav').midnight();
-           //- $('#fullpage').fullpage();
-           $('#fullpage').scrollNav();
-        });
+    script(type="text/javascript" src="https://cdn.jsdelivr.net/jquery.tooltipster/4.1.4/js/tooltipster.bundle.min.js")
+
     
     //- scrollNav
-    script(src="jquery.scrollNav.min.js")
+    //- script(src="jquery.scrollNav.min.js")
     //- Fullpage
     //- link(rel="stylesheet" 
     //-   href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.css")
@@ -30,8 +23,25 @@ html
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css")
     link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.tooltipster/4.1.4/css/tooltipster.core.min.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.tooltipster/4.1.4/css/tooltipster.bundle.min.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.tooltipster/4.1.4/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css")
+
     link(rel="stylesheet" href="/main.css")
 
+    //- Initializers - should be moved to app.coffee
+    script(type="text/javascript").
+        // Start midnight
+        $(document).ready(function(){
+          // Change this to the correct selector.
+          $('nav').midnight();
+           //- $('#fullpage').fullpage();
+          //- $('#fullpage').scrollNav();
+          $('.tooltiped').tooltipster({
+            theme: 'tooltipster-borderless'
+          });
+
+        });
   body
     //- link(type="text/javascript" src="js/materialize.min.js")
     != yield
